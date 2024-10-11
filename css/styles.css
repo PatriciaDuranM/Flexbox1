@@ -56,9 +56,23 @@ body{
     }
 }
 
+.imagehover{
+    width: 302px;
+    height: 302px;
+    position: relative;
+}
+
+
+.eye{
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+}
+
 .image{
     border-radius: 8px;
 }
+
 
 @media(hover: hover){
     .image{

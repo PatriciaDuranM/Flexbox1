@@ -66,11 +66,20 @@ body{
 .eye{
     opacity: 1;
     position: absolute;
-    top: 0px;
+    top: 125px;
+    left: 127px;
 }
 
 .image{
     border-radius: 8px;
+}
+
+.image::after{
+    content: "";
+    display: block;
+    width: 302px;
+    height: 302px;
+    background-color: #00FFF8;
 }
 
 

@@ -64,32 +64,42 @@ body{
 
 
 .eye{
-    opacity: 1;
     position: absolute;
     top: 125px;
     left: 127px;
+    z-index: 1;
+    opacity: 0;
+}
+@media ( hover: hover){
+    .eye:hover{
+        opacity: 1;
+    }
 }
 
-.image{
-    border-radius: 8px;
+.rectangle{
+    position: relative;
 }
 
-.image::after{
+.rectangle::after{
     content: "";
     display: block;
     width: 302px;
     height: 302px;
     background-color: #00FFF8;
+    border-radius: 8px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
 }
 
-
-@media(hover: hover){
-    .image{
-        width: 302px;
-        height: 302px;
-        background-color: rgba(0, 255, 247, 0.50);
-
+@media ( hover: hover){
+    .rectangle::after:hover{
+        opacity: 0.5;
     }
+}
+
+.image{
+    border-radius: 8px;
 }
 
 .title{
@@ -98,6 +108,12 @@ body{
     font-size: 22px;
     margin-bottom: 12px;
     margin-top: 24px;
+}
+
+@media ( hover: hover){
+    .title:hover{
+        color: #00FFF8;
+    }
 }
 
 .description{
@@ -157,5 +173,11 @@ body{
     color: #FFF;
     font-weight: 400;
     font-size: 15px;
+}
+
+@media ( hover: hover){
+    .bold:hover{
+        color: #00FFF8;
+    }
 }
 

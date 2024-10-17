@@ -70,6 +70,7 @@ body{
     z-index: 1;
     opacity: 0;
 }
+
 @media ( hover: hover){
     .eye:hover{
         opacity: 1;
@@ -93,8 +94,12 @@ body{
 }
 
 @media ( hover: hover){
-    .rectangle::after:hover{
+    .rectangle:hover::after{
         opacity: 0.5;
+    }
+
+    .rectangle:hover .eye{
+        opacity: 1;
     }
 }
 
